@@ -36,9 +36,6 @@ async def cmd_stop(message: types.Message):
     await message.answer_photo(photo=img_fox)
     # await bot.send_photo(message.from_user.id, photo=img_fox) # рассылает фото всем, с кем уже начат диалог (рассылка по id)
 
-
-# /user, /about, /my_funct
-
 #Хендлер на сообщения (любой ввод, который не отработался в предыдущих командах)
 @router.message(F.text)
 async def msg_echo(message: types.Message):
